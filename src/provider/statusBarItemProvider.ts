@@ -10,7 +10,7 @@ export class StatusBarItemProvider extends DisposeProvider {
   }
 
   private createCurrentTagStatusBarItem(dataFileEvent: vscode.Event<Array<DataFile>>) {
-    const statusBarItem = vscode.window.createStatusBarItem('timewarrior_tag', vscode.StatusBarAlignment.Right);
+    const statusBarItem = vscode.window.createStatusBarItem('timewarrior_tag', vscode.StatusBarAlignment.Left);
     statusBarItem.hide();
 
     dataFileEvent(async dataFiles => {
